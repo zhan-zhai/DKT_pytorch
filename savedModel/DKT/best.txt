@@ -1,0 +1,18 @@
+best auc - 1.000 of epoch - 1 using ASSISTments2009
+best auc - 0.791 of epoch - 46 using ASSISTments2009
+best auc - 0.663 of epoch - 20 using ASSISTments2015
+best auc - 0.788 of epoch - 14 using ASSISTments2009
+best auc - 0.711 of epoch - 17 using synthetic
+best auc - 0.822 of epoch - 12 using synthetic
+best auc - 0.818 of epoch - 5 using ASSISTments2009
+best auc - 0.726 of epoch - 2 using ASSISTments2015 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 100
+best auc - 0.680 of epoch - 12 using ASSISTments2017 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 300
+best auc - 0.687 of epoch - 45 using ASSISTmentsChall -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 500
+best auc - 0.847 of epoch - 38 using statics2011 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 500
+best auc - 0.812 of epoch - 16 using KDDCup2010 -- learning_rate - 0.01 -- batch_size - 128 -- seq_size - 200
+best auc - 0.812 of epoch - 6 using ASSISTments2009 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 100
+best auc - 0.718 of epoch - 40 using synthetic -- learning_rate - 0.01 -- batch_size - 128 -- seq_size - 100
+best auc - 0.821 of epoch - 9 using synthetic -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 100
+best auc - 0.723 of epoch - 2 using ASSISTments2015 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 50
+best auc - 0.728 of epoch - 6 using ASSISTments2015 -- learning_rate - 0.002 -- batch_size - 128 -- seq_size - 50
+best auc - 0.724 of epoch - 2 using ASSISTments2015 -- learning_rate - 0.01 -- batch_size - 128 -- seq_size - 50

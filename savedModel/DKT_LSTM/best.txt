@@ -1,0 +1,25 @@
+best auc - 0.770 of epoch - 12 using ASSISTments2009
+best auc - 0.772 of epoch - 9 using ASSISTments2009
+best auc - 0.772 of epoch - 5 using ASSISTments2009
+best auc - 0.910 of epoch - 1 using ASSISTments2015
+best auc - 0.534 of epoch - 0 using ASSISTments2017
+best auc - 0.541 of epoch - 0 using ASSISTments2017
+best auc - 0.575 of epoch - 29 using ASSISTments2017
+best auc - 0.559 of epoch - 29 using ASSISTmentsChall
+best auc - 0.553 of epoch - 13 using ASSISTmentsChall
+best auc - 0.756 of epoch - 2 using KDDCup2010
+best auc - 0.958 of epoch - 35 using statics2011
+best auc - 0.830 of epoch - 28 using synthetic
+best auc - 0.804 of epoch - 6 using synthetic -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 100
+best auc - 0.800 of epoch - 31 using synthetic -- learning_rate - 0.01 -- batch_size - 128 -- seq_size - 200
+best auc - 0.798 of epoch - 3 using ASSISTments2009 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 200
+best auc - 0.773 of epoch - 5 using ASSISTments2009 -- learning_rate - 0.01 -- batch_size - 64 -- seq_size - 100
+best auc - 0.798 of epoch - 4 using ASSISTments2009 -- learning_rate - 0.002 -- batch_size - 32 -- seq_size - 200
+best auc - 0.919 of epoch - 2 using ASSISTments2015 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 100
+best auc - 0.559 of epoch - 15 using ASSISTments2017 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 500
+best auc - 0.527 of epoch - 2 using ASSISTments2017 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 200
+best auc - 0.590 of epoch - 3 using ASSISTments2017 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 300
+best auc - 0.571 of epoch - 0 using ASSISTmentsChall -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 300
+best auc - 0.777 of epoch - 2 using KDDCup2010 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 300
+best auc - 0.934 of epoch - 10 using statics2011 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 500
+best auc - 0.795 of epoch - 13 using ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 32 -- seq_size - 200
