@@ -1,0 +1,18 @@
+best auc - 0.523 of epoch - 12 using ASSISTments2009 -- learning_rate - 0.01 -- batch_size - 64 -- seq_size - 100
+best auc - 0.461 of epoch - 15 using ASSISTments2009 -- learning_rate - 0.01 -- batch_size - 16 -- seq_size - 100
+best auc - 0.712 of epoch - 0 using KDDCup2010 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 200
+best auc - 0.688 of epoch - 0 using KDDCup2010 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 200
+best auc - 0.726 of epoch - 30 using ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.722 of epoch - 49 using ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 200
+best auc - 0.777 of epoch - 44 using ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 200
+best auc - 0.774 of epoch - 27 using ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 200
+best auc - 0.771 of epoch - 24 using ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.776 of epoch - 12 using ASSISTments2009 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.776 of epoch - 40 using ASSISTments2009 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.785 of epoch - 45 using ASSISTments2009 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.780 of epoch - 44 using ASSISTments2009 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.775 of epoch - 32 using KDDCup2010 to ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.780 of epoch - 20 using KDDCup2010 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.877 of epoch - 28 using ASSISTments2015 to synthetic -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.972 of epoch - 25 using statics2011 to ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 32 -- seq_size - 200
+best auc - 0.900 of epoch - 22 using statics2011 to KDDCup2010 -- learning_rate - 0.001 -- batch_size - 32 -- seq_size - 200
