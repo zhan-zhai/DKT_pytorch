@@ -205,12 +205,12 @@ def plotAucCurve(epochs,aucs,filename):
 
 # 解析传入的参数
 parser = argparse.ArgumentParser(description='myDemo')
-parser.add_argument('--batch_size',type=int,default=64,metavar='N',help='number of batch size to train (defauly 64 )')
-parser.add_argument('--epochs',type=int,default=50,metavar='N',help='number of epochs to train (defauly 10 )')
+parser.add_argument('--batch_size',type=int,default=128,metavar='N',help='number of batch size to train (defauly 64 )')
+parser.add_argument('--epochs',type=int,default=30,metavar='N',help='number of epochs to train (defauly 10 )')
 parser.add_argument('--lr',type=float,default=0.001,help='number of learning rate')
 parser.add_argument('--data_dir', type=str, default='./data/',help="the data directory, default as './data")
 parser.add_argument('--hidden_size',type=int,default=100,help='the number of the hidden-size')
-parser.add_argument('--max_step',type=int,default=200,help='the number of max step')
+parser.add_argument('--max_step',type=int,default=100,help='the number of max step')
 parser.add_argument('--num_layers',type=int,default=1,help='the number of layers')
 parser.add_argument('--separate_char',type=str,default=',',help='分隔符')
 parser.add_argument('--min_step',type=int,default=10,help='the number of min step')
@@ -236,19 +236,19 @@ parser.add_argument('--num_head', type=int, default=5)
 # 源域数据集的题目数量要多于目标域数据集，否则会产生越界错误
 parser.add_argument('--lamda', type=float, default=0.5)
 parser.add_argument('--mmd', type=bool, default=True)
-parser.add_argument('--src_dataset', type=str, default='ASSISTments2015', help='which dataset to transfer')
+parser.add_argument('--src_dataset', type=str, default='synthetic', help='which dataset to transfer')
 parser.add_argument('--src_train_file', type=str, default='train_set.csv',
                     help="train data file, default as 'train_set.csv'.")
 parser.add_argument('--src_test_file', type=str, default='test_set.csv',
                     help="test data file, default as 'test_set.csv'.")
-parser.add_argument('--src_n_question', type=int, default=100, help='the number of unique questions in the dataset')
-parser.add_argument('--mmd_batch_size',type=int,default=64,metavar='N',help='number of batch size to train tramsfer(defauly 64 )')
+parser.add_argument('--src_n_question', type=int, default=50, help='the number of unique questions in the dataset')
+parser.add_argument('--mmd_batch_size',type=int,default=128,metavar='N',help='number of batch size to train tramsfer(defauly 64 )')
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
 
-    dataset = 'KDDCup2010'  #  ASSISTments2009 / ASSISTments2015 /  synthetic / statics2011 / junyiacademy / EDNet /KDDCup2010
+    dataset = 'ASSISTments2015'  #  ASSISTments2009 / ASSISTments2015 /  synthetic / statics2011 / junyiacademy / EDNet /KDDCup2010
 
     model = 'SAKT'  # DKT /
     parser.add_argument('--model', type=str, default='SAKT', help='which model to train')
@@ -344,6 +344,16 @@ if __name__ == '__main__':
         parser.add_argument('--save_dir_prefix', type=str, default='./KDDCup2010/',
                             help="train data file, default as './KDDCup2010/'.")
         parser.add_argument('--n_question', type=int, default=661, help='the number of unique questions in the dataset')
+    
+    elif dataset == 'transfer':
+        parser.add_argument('--dataset', type=str, default='transfer', help='which dataset to train')
+        parser.add_argument('--train_file', type=str, default='train_set.csv',
+                            help="train data file, default as 'train_set.csv'.")
+        parser.add_argument('--test_file', type=str, default='test_set.csv',
+                            help="train data file, default as 'test_set.csv'.")
+        parser.add_argument('--save_dir_prefix', type=str, default='./transfer/',
+                            help="train data file, default as './transfer/'.")
+        parser.add_argument('--n_question', type=int, default=678, help='the number of unique questions in the dataset')
 
 
 #     # 解析参数
@@ -486,13 +496,14 @@ if __name__ == '__main__':
 #     best_model.load_state_dict(torch.load('./fineTuneModel/DKVMN/ASSISTments2009_ASSISTments2015_46.pt'))
     if not parsers.mmd:
         sys.exit()
-    
+        
+    for param in best_model.parameters():
+        param.requires_grad = False
+    best_model.classifier.weight.requires_grad = True
+    best_model.classifier.bias.requires_grad = True
     if parsers.model=='DKT_LSTM':
-        for param in best_model.parameters():
-            param.requires_grad = False
-        best_model.classifier.weight.requires_grad = True
-        best_model.classifier.bias.requires_grad = True
         best_model.classifier = torch.nn.Linear(parsers.hidden_dim, parsers.src_n_question)
+    
     fine_tune_aucs = []
     for epoch in range(parsers.epochs):
         train_loss, train_acc, train_auc = train_epoch(best_model, src_train_dataloader, optimizer, schedule, criterion,parsers, device)

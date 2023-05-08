@@ -23,3 +23,9 @@ best auc - 0.571 of epoch - 0 using ASSISTmentsChall -- learning_rate - 0.002 --
 best auc - 0.777 of epoch - 2 using KDDCup2010 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 300
 best auc - 0.934 of epoch - 10 using statics2011 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 500
 best auc - 0.795 of epoch - 13 using ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 32 -- seq_size - 200
+best auc - 0.833 of epoch - 23 using transfer -- learning_rate - 0.001 -- batch_size - 16 -- seq_size - 100
+best auc - 0.767 of epoch - 0 using transfer -- learning_rate - 0.001 -- batch_size - 8 -- seq_size - 100
+best auc - 0.521 of epoch - 26 using transfer -- learning_rate - 0.001 -- batch_size - 2 -- seq_size - 100
+best auc - 0.796 of epoch - 7 using ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 200
+best auc - 0.912 of epoch - 6 using ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 200
+best auc - 0.843 of epoch - 22 using synthetic -- learning_rate - 0.001 -- batch_size - 128 -- seq_size - 50

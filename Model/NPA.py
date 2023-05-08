@@ -74,6 +74,8 @@ class NPA(nn.Module):
         # activation functions
         self._tanh = nn.Tanh()
         self._softmax = nn.Softmax(dim=-1)
+        
+        self.classifier = self._fc_layers
 
         # Xavier uniform initialization
         for p in self.parameters():

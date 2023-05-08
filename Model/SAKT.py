@@ -114,6 +114,8 @@ class SAKT(nn.Module):
         self._positional_embedding = nn.Embedding(seq_size+1, hidden_dim)
         self._interaction_embedding = nn.Embedding(2*question_num+1, hidden_dim)
         self._question_embedding = nn.Embedding(question_num+1, hidden_dim)
+        
+        self.classifier = self._prediction
 
     def _transform_interaction_to_question_id(self, interaction):
         """

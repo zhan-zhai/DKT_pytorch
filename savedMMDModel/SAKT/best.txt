@@ -1,1 +1,3 @@
 best auc - 0.798 of epoch - 5 using ASSISTments2009 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 100
+best auc - 0.779 of epoch - 4 using KDDCup2010 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 100
+best auc - 0.775 of epoch - 13 using ASSISTments2009 to synthetic -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 200

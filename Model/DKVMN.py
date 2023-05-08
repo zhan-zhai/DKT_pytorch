@@ -45,6 +45,7 @@ class DKVMN(nn.Module):
         self._sigmoid = nn.Sigmoid()
         self._tanh = nn.Tanh()
         self._softmax = nn.Softmax(dim=-1)
+        self.classifier = self._output_layer
 
     def _transform_interaction_to_question_id(self, interaction):
         """
