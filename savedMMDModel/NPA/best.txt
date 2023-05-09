@@ -3,3 +3,8 @@ best auc - 0.505 of epoch - 0 using ASSISTments2009 -- learning_rate - 0.002 -- 
 best auc - 0.524 of epoch - 1 using ASSISTments2009 -- learning_rate - 0.01 -- batch_size - 64 -- seq_size - 200
 best auc - 0.500 of epoch - 0 using ASSISTments2009 -- learning_rate - 0.01 -- batch_size - 64 -- seq_size - 200
 best auc - 0.731 of epoch - 24 using ASSISTments2009 -- learning_rate - 0.01 -- batch_size - 4 -- seq_size - 100
+best auc - 0.795 of epoch - 13 using ASSISTments2009 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 100
+best auc - 0.797 of epoch - 9 using ASSISTments2009 to ASSISTments2015 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 100
+best auc - 0.803 of epoch - 45 using ASSISTments2009 to synthetic -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 100
+best auc - 0.932 of epoch - 11 using ASSISTments2015 to synthetic -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 100
+best auc - 0.765 of epoch - 5 using KDDCup2010 to ASSISTments2009 -- learning_rate - 0.001 -- batch_size - 64 -- seq_size - 200

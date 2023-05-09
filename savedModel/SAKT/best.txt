@@ -56,3 +56,16 @@ best auc - 0.767 of epoch - 1 using KDDCup2010 -- learning_rate - 0.001 -- batch
 best auc - 0.739 of epoch - 47 using KDDCup2010 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 300
 best auc - 0.748 of epoch - 1 using KDDCup2010 -- learning_rate - 0.002 -- batch_size - 64 -- seq_size - 200
 best auc - 0.764 of epoch - 21 using KDDCup2010 -- learning_rate - 0.01 -- batch_size - 128 -- seq_size - 300
+best auc - 0.960 of epoch - 34 using transfer -- learning_rate - 0.001 -- batch_size - 16 -- seq_size - 100
+best auc - 0.625 of epoch - 35 using transfer -- learning_rate - 0.001 -- batch_size - 16 -- seq_size - 100
+best auc - 0.773 of epoch - 28 using transfer -- learning_rate - 0.001 -- batch_size - 16 -- seq_size - 100
+best auc - 0.811 of epoch - 0 using transfer -- learning_rate - 0.001 -- batch_size - 16 -- seq_size - 100
+best auc - 0.700 of epoch - 5 using transfer -- learning_rate - 0.001 -- batch_size - 16 -- seq_size - 100
+best auc - 0.745 of epoch - 17 using transfer -- learning_rate - 0.001 -- batch_size - 16 -- seq_size - 100
+best auc - 0.891 of epoch - 29 using transfer -- learning_rate - 0.001 -- batch_size - 16 -- seq_size - 100
+best auc - 0.462 of epoch - 32 using transfer -- learning_rate - 0.001 -- batch_size - 8 -- seq_size - 100
+best auc - 0.756 of epoch - 46 using transfer -- learning_rate - 0.001 -- batch_size - 8 -- seq_size - 100
+best auc - 0.607 of epoch - 0 using transfer -- learning_rate - 0.001 -- batch_size - 8 -- seq_size - 100
+best auc - 0.950 of epoch - 3 using statics2011 -- learning_rate - 0.001 -- batch_size - 8 -- seq_size - 100
+best auc - 0.529 of epoch - 25 using transfer -- learning_rate - 0.001 -- batch_size - 8 -- seq_size - 100
+best auc - 0.674 of epoch - 12 using transfer -- learning_rate - 0.001 -- batch_size - 8 -- seq_size - 100
